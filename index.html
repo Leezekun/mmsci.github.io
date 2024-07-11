@@ -2,85 +2,51 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Directional Stimulus Prompting">
+  <meta property="og:title" content="Guiding Large Language Models via Directional Stimulus Prompting"/>
+  <meta property="og:description" content="Directional Stimulus Prompting"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="MMSci">
+  <meta name="twitter:description" content="MMSci: A Multimodal Multi-Discipline Dataset for PhD-Level Scientific Comprehension">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Phd-level Scientific Comprehension, Phd-level Scientific Understanding, scientific figure understanding, multi-modal multi-discipline dataset, LMM, LLM, large language models, large multimodal models, large vision language models, mmsci">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
+  <title>Guiding Large Language Models via
+    Directional Stimulus Prompting
+    </title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
 
 
 <section class="hero">
@@ -88,48 +54,68 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">MMSci: A Multimodal Multi-Discipline Dataset for PhD-Level Scientific Comprehension</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=MD61m08AAAAJ&hl=en&oi=ao">Zekun Li</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://xianjun-yang.github.io/">Xianjun Yang</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://leezekun.github.io/mmsci.github.io/">Kyuri Choi</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="hhttps://wanrong-zhu.com/">Wanrong Zhu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://www.linkedin.com/in/ryanwhsieh/">Ryan Hsieh</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://www.linkedin.com/in/hyeonjung-kim-a57857310/?originalSubdomain=kr/">HyeonJung Kim</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://leezekun.github.io/mmsci.github.io/">Jin Hyuk Lim</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://leezekun.github.io/mmsci.github.io/">Sungyoung Ji</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=_z3JW2YAAAAJ&hl=en&oi=ao">Byungju Lee</a><sup>2,3</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://sites.cs.ucsb.edu/~xyan/">Xifeng Yan</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=6IxWYR0AAAAJ&hl=en&oi=ao">Linda Ruth Petzold</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://labs.materials.ucsb.edu/wilson/stephen/">Stephen D. Wilson</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/woosanglim/">Woosang Lim</a><sup>2†</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://sites.cs.ucsb.edu/~william/">William Wang</a><sup>1†</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>University of California, Santa Barbara</span>
+            <span class="author-block"><sup>2</sup>POSCO HOLDINGS</span>
+            <span class="author-block"><sup>3</sup>KIST</span>
+            <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding authors.</small></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of California, Santa Barbara</span>
+            <span class="author-block"><sup>2</sup>POSCO HOLDINGS</span>
+            <span class="author-block"><sup>3</sup>KIST</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="arxiv.org/abs/2407.04903"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -138,7 +124,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -146,25 +132,25 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+              <!-- <span class="link-block">
+                <a href="https://github.com/Leezekun/MMSci"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code&Data</span>
                   </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://github.com/Leezekun/MMSci"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Code&Data</span>
                   </a>
             </div>
 
@@ -175,316 +161,329 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
+<!-- Image carousel -->
+<section class="hero">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+              <div class="column is-four-fifths">
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/example_v2.jpg" alt="Comparison of our Directional Stimulus Prompting and the standard prompting method using LLMs such as ChatGPT for the summarization task." />
+                      <h2 class="subtitle;columns is-centered">
+                          Figure 1: Comparison of our Directional Stimulus Prompting and the standard prompting method using LLMs such as ChatGPT for the summarization task. DSP utilizes directional stimulus/hints (highlighted in orange), which are keywords in this case, to provide instance-specific guidance to LLMs in generating summaries (highlighted in blue) that better align with the desired reference summary with higher ROUGE scores or other measures like human preferences.
+                      </h2>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
 </section>
+<!-- End image carousel -->
 
-
-<section class="section">
+<!-- Paper abstract -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            We introduce Directional Stimulus Prompting, a novel framework for guiding
+black-box large language models (LLMs) toward specific desired outputs. Instead
+of directly adjusting LLMs, our method employs a small tunable policy model (e.g.,
+T5) to generate an auxiliary directional stimulus prompt for each input instance.
+These directional stimulus prompts act as nuanced, instance-specific hints and clues
+to guide LLMs in generating desired outcomes, such as including specific keywords
+in the generated summary. Our approach sidesteps the challenges of direct LLM
+tuning by optimizing the policy model to explore directional stimulus prompts that
+align LLMs with desired behaviors. The policy model can be optimized through
+1) supervised fine-tuning using labeled data and 2) reinforcement learning from
+offline or online rewards based on the LLM’s output. We assess our method across
+summarization, dialogue response generation, and chain-of-thought reasoning tasks.
+Our experiments demonstrate that the framework consistently improves LLMs’
+(e.g., ChatGPT, Codex, InstructGPT) performance on these supervised tasks using
+minimal labeled data. Notably, using just 80 dialogues on the MultiWOZ dataset,
+our approach enhances ChatGPT’s performance by an impressive 41.4%, matching
+or surpassing some fully supervised start-of-the-art models. Additionally, the
+instance-specific chain-of-thought prompt generated by our approach improves
+InstructGPT’s reasoning accuracy compared to human-crafted or automatically
+generated prompts. The code and data are publicly available.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section>
+<!-- End paper abstract -->
 
-    <!-- Paper video. -->
+
+<!-- Image carousel -->
+<section class="hero">
+  <div class="hero-body">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered is-fifths-fifths">
+                <h2 style:"text-align: center;" class="title is-3">Approach</h2>
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/overview_page-0001.jpg" alt="overview_page-0001.jpg" />
+                      <h2 class="subtitle;columns is-centered">
+                          Figure 2: Overview of our proposed framework DSP, where we learn a small tunable policy model
+                          to generate the directional stimulus (keywords in this case) that provide input-specific guidance for
+                          the LLM toward the desired target. The policy model can be trained with SFT and/or RL, where the
+                          reward is defined as the downstream task performance measure, such as the ROUGE score for the
+                          summarization task, or other alignment measures like human preferences.
+                      </h2>
+                  </div>
+              </div>
+          </div>
+          <div class="column is-fifths-fifths">
+            <p style="margin-left: 2em;margin-right: 2em;">We utilize a relatively small and tunable LM (e.g., T5), as the policy model to generate the directional
+              stimulus prompt for each input query. This approach enables us to sidestep the direct optimization
+              of black-box LLMs by optimizing the small tunable policy model instead. We train the policy
+              model through supervised fine-tuning (SFT) using a few collected labeled data. After supervised
+              fine-tuning, we further optimize the policy model to explore better directional stimulus prompts
+              with reinforcement learning (RL). During RL training, we aim to maximize the reward defined as
+              downstream performance measures or any other measures of the LLM’s output conditioned on the
+              stimulus generated by the policy model.<br /></p> 
+            </p>
+        </div>
+      </div>
+  </div>
+</section>
+<!--approach end-->
+
+
+<!-- experiment1 carousel -->
+<section class="hero">
+  <div class="hero-body">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered is-fifths-fifths">
+                <h2 style:"text-align: center;" class="title is-3">Experiments</h2><br />
+                  <div class="item">
+                      <h2 class="subtitle;columns is-centered">
+                        In this work, we focus on the summarization, dialogue response generation, and automatic prompt generation tasks.
+                        We mainly use pre-trained T5 or Flan-T5 to initialize the policy model and evaluate the OpenAI’s ChatGPT (gpt-3.5-turbo), 
+                        Codex (code-davinci-002), and InstructGPT (text-davinci-002).<br /><br/>
+                      </h2>
+                      <h2 class="subtitle;"><b>1. Summarization</b><br/><br/></h2>
+                      <!-- Your image here -->
+                      <img src="static/images/cnndm_exp_chatgpt2_page-0001.jpg" alt="cnndm_exp_chatgpt2_page-0001.jpg" />
+                      <h2 class="subtitle;columns is-centered">
+                        Figure 3: Performance comparison of ChatGPT with standard prompting and DSP trained with SFT
+                        and SFT+RL, using varying numbers of training samples from the CNN/Daily Mail dataset.
+                      </h2>
+                  </div>
+              </div>
+          </div>
+          <div class="column is-fifths-fifths">
+            <p style="margin-left: 2em;margin-right: 2em;"><br />We evaluate the performance of ChatGPT with standard prompting and our approach DSP
+              trained with SFT or SFT and then RL (SFT+RL) on varying sizes of training data and present the results in Figure 3. As can be seen, all 
+              the evaluation scores improve with our proposed DSP compared with standard prompting. Specifically, the supervised fine-tuned policy 
+              model generates the stimulus that effectively guides ChatGPT to generate summaries that closely align with the reference summaries, leading 
+              to improved benchmark performance. Furthermore, the additional fine-tuning of the policy model with RL results in further performance 
+              improvement, indicating the effectiveness of RL in exploring better directional stimulus that maximizes the reward. As the size of the 
+              training data increases, the performance improvement becomes more significant. Despite using a small collection of only 1,000 to 4,000 
+              samples to keep API usage costs low, our DSP approach still consistently enhances ChatGPT’s ROUGE, BLEU, and Meteor scores by 1-2 points, 
+              even though ChatGPT has already achieved considerable performance.</p>
+              <br/>
+            </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column has-text-centered is-fifths-fifths">
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/training_curve-1000.jpg" 
+                    width="400" 
+                    height="300" 
+                    alt="training_curve-1000.jpg" />
+                    <h2 class="subtitle;columns is-centered">
+                      Figure 4: Training curve on 1000 samples from the CNN/Daily Mail dataset.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="column is-fifths-fifths">
+          <p style="margin-left: 2em;margin-right: 2em;"><br />However, due to the discrepancy between
+            the semantic-based metric BERTScore and the overlap-based metric ROUGE, which are used as the
+            reward, the improvement in BERTScore after RL training may be relatively less significant. Figure 4
+            presents the change of training rewards and ROUGE-1 score on the validation set during the training
+            process on 1,000 samples. We can see that the performance is closely related to the training rewards,
+            and the training is relatively stable using the NLPO algorithm.<br/><br/>
+               To gain a better understanding of generated summaries guided by keywords, we employed <b>GPT-4</b> to evaluate 
+            the summaries. <br/>
+            </p>
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column has-text-centered is-fifths-fifths">
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/gpt4_eval_pie_chart.jpg" 
+                    width="400" 
+                    height="300" 
+                    alt="training_curve-1000.jpg" />
+                    <h2 class="subtitle;columns is-centered">
+                      Figure 5: GPT-4 evaluation on comparing the summaries generated with our approach DSP, 
+                      i.e., with the guidance of our generated keywords, and the original standard prompting, 
+                      i.e., without keyword guidance.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="column is-fifths-fifths">
+          <p style="margin-left: 2em;margin-right: 2em;"><br />The results are shown in Figure 5. We found that GPT-4 can 
+            produce reasonable and detailed explanations of their assessment. From our test set of 500 samples: DSP-generated 
+            summaries were favored 255 times (51.0%), summaries generated with original standard prompting were favored 222 
+            times (44.4%), while a tie was observed in 23 cases (4.6%).
+            </p>
+          </p>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- experiment2 carousel -->
+<section class="hero">
+  <div class="hero-body">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered is-fifths-fifths">
+              <div class="item">
+                <h2 class="subtitle;"><b>2. Dialogue Response Generation</b><br/><br/></h2>
+                <!-- Your image here -->
+                <img src="static/images/table1.png" alt="table1.png" />
+                <h2 class="subtitle;columns is-centered">
+                  Table 1: Response generation performance of different methods on the MultiWOZ 2.0&2.1 datasets, 
+                  where Succ. and Comb. denote the Success and Combined Score metrics, respectively.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="column is-fifths-fifths">
+            <p style="margin-left: 2em;margin-right: 2em;"><br /> Table 1 summarizes the overall performance comparison, 
+              from which we obtain the following observations: <br/><br/><b>(1)</b> Our approach DSP significantly improves the
+              success and inform rates of Codex and ChatGPT, indicating that they better understand the scenario
+              and generate appropriate responses that help users in completing their tasks. <br/><br/><b>(2)</b> There is no
+              improvement in the corpus-level BLEU score, possibly because the LLMs generate responses with
+              different speaking styles and vocabulary since they do not see oracle system responses. Nevertheless,
+              the high success and inform rates demonstrate the usefulness of our approach in delivering helpful and
+              reliable responses. <br/><br/><b>(3)</b> RL training encourages the policy model to explore more
+              model-preferred stimulus, while supervised fine-tuning may merely generate stimulus closely aligned
+              with the pseudo-labeled data, which is not necessarily optimal. <br/><br/><b>(4)</b> Our approach achieves notable
+              success with only 80 dialogues, surpassing several fully trained TOD models, particularly in terms
+              of Success and Inform rates.</p>
+              <br/>
+            </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- experiment3 carousel -->
+<section class="hero">
+  <div class="hero-body">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered is-fifths-fifths">
+              <div class="item">
+                <h2 class="subtitle;"><b>3. Chain-of-Thought reasoning</b><br/><br/></h2>
+                <!-- Your image here -->
+                <img src="static/images/table2.jpg" alt="table2.jpg" />
+                <h2 class="subtitle;columns is-centered">
+                  Table 2: Zero-shot chain of thoughts performance of InstructGPT (text-davinci-002) with different prompts. 
+                  *Our approach trains a policy model to generate instance-specific prompt triggers, which are compared to 
+                  the task-specific prompts in [26, 79].
+
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="column is-fifths-fifths">
+            <p style="margin-left: 2em;margin-right: 2em;"><br /> As can be seen in Table 2, InstructGPT’s performance
+              varies significantly when using different task-specific prompts. Compared to the 14 task-specific
+              human-designed prompts, DSP enhances the performance with instance-specific prompts. It also
+              outperforms the prompt discovered by the APE approach. Solely relying on supervised fine-tuning
+              of the policy model with the dataset comprising the 14 human-designed prompts doesn’t lead to
+              its peak performance. After fine-tuning with RL, the policy model is encouraged to explore better
+              instance-specific trigger prompts, further improving performance.</p>
+              <br/>
+            </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- conclusions -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h2 class="title is-3">Conclusions and Future Work</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            In this paper, we introduce Directional Stimulus Prompting (DSP), a new prompting framework
+to provide black-box LLMs with fine-grained and instance-specific guidance toward the desired
+outputs. We use a tunable policy model to generate the directional stimulus to provide such guidance
+and convert the optimization of black-box LLMs to that of the policy model. Experimental results
+demonstrate the effectiveness of our approach. DSP not only enables better control and guidance
+for black-box LLMs, but also effectively utilizes labeled data. Furthermore, the generated stimulus
+provides valuable insights and interpretations of LLMs’ behaviors. In this work, we use heuristically
+selected or annotated pseudo-stimulus data for supervised fine-tuning of the policy model. For future
+work, we hope to explore the possibility of using a “machine language” between the policy model
+and the LLMs that might not be intuitively preferred by humans but can better convey guidance
+information, as well as other forms of directional stimulus beyond text.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
+<!-- End conclusions -->
 
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{li2023guiding,
+        title={Guiding Large Language Models via Directional Stimulus Prompting}, 
+        author={Zekun Li and Baolin Peng and Pengcheng He and Michel Galley and Jianfeng Gao and Xifeng Yan},
+        year={2023},
+        eprint={2302.11520},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL}
+  }</code></pre>
+    </div>
 </section>
+<!--End BibTex citation -->
 
 
-<footer class="footer">
+  <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
+
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-</body>
-</html>
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
